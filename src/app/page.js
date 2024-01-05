@@ -1,113 +1,204 @@
-import Image from 'next/image'
+"use client";
 
-export default function Home() {
+import { GithubProjects } from "@/components";
+import ExperienceSection from "@/components/ExperienceSection";
+import Link from "next/link";
+
+export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="px-4 md:px-3 xl:px-0">
+      <section id="about" className="py-8 md:py-10">
+        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332]">
+          About me
+        </h1>
+        <div className="pt-10 pb-8 max-w-5xl flex flex-col gap-y-3">
+          <div className="text-lg font-light leading-relaxed">
+            <p>
+              Lorem ipsum diam sodales volutpat sapien magna interdum, proin
+              platea tempus libero hendrerit semper pellentesque odio, fermentum
+              a tristique fusce commodo fusce. Facilisis auctor aptent consequat
+              sem risus nec netus praesent cubilia diam, vestibulum pretium
+              egestas netus risus egestas molestie arcu posuere sociosqu amet,
+              lectus tellus mi habitasse per sem vulputate feugiat nostra.
+              Malesuada praesent risus commodo aliquam dictumst vitae tristique,
+              nullam fringilla dolor fermentum suspendisse euismod, posuere
+              phasellus congue tortor placerat eros.
+            </p>
+            <p className="mt-2">
+              Quisque sodales adipiscing placerat euismod sapien ac erat,
+              fringilla pellentesque praesent habitasse tortor fringilla,
+              eleifend ultricies tincidunt iaculis sit arcu. Pellentesque vitae
+              rutrum venenatis non porttitor accumsan, faucibus non habitant
+              dictum sit, quam vitae rutrum lacinia rhoncus. Aenean purus
+              elementum interdum orci primis cras, mattis duis porta donec purus
+              massa potenti, faucibus euismod molestie augue eleifend. Pulvinar
+              etiam imperdiet taciti cursus eget consequat, justo a mauris
+              euismod ligula, ad platea interdum himenaeos suspendisse.
+            </p>
+            <p className="mt-2">
+              <span className="font-medium">Tech Stack:</span> X, Y, Z, A, B, C
+              and a few other things.
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      </section>
+      <section id="education" className="">
+        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332]">
+          Education
+        </h1>
+        <div className="pt-10 pb-16">
+          <div className="space-y-6 ml-3 border-l-2 border-dashed">
+            <div className="relative w-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <div className="ml-6">
+                <h4 className="font-bold text-blue-500">Lorem ipsum</h4>
+                <p className="mt-2 max-w-screen-sm text-sm text-gray-500">
+                  Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac
+                  dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet
+                  sem in, lobortis ante.
+                </p>
+                <span className="mt-1 block text-sm font-semibold text-blue-500">
+                  2021 - Present
+                </span>
+              </div>
+            </div>
+            <div className="relative w-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <div className="ml-6">
+                <h4 className="font-bold text-blue-500">Lorem ipsum 1</h4>
+                <p className="mt-2 max-w-screen-sm text-sm text-gray-500">
+                  Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac
+                  dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet
+                  sem in, lobortis ante.
+                </p>
+                <span className="mt-1 block text-sm font-semibold text-blue-500">
+                  2016 - 2020
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience" className="">
+        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332]">
+          Experience
+        </h1>
+        <div className="pt-10 pb-16">
+          <div className="relative">
+            <ul className="list-none m-0 p-0">
+              <li className="mb-2">
+                <div className="flex items-center mb-1">
+                  <div className="bg-blue-500 rounded-full h-4 w-4 border-gray-200 border-2 z-10"></div>
+                  <div className="flex-1 ml-4 font-medium">
+                    Oct 2020 - Learn Electron JS
+                  </div>
+                </div>
+                <div className="ml-8">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dignissimos tenetur, suscipit atque et nulla dolores unde
+                  maiores doloribus nemo possimus commodi totam consectetur
+                  temporibus odit velit illo repellendus provident vitae.
+                </div>
+              </li>
+              <li className="mb-2">
+                <div className="flex items-center mb-1">
+                  <div className="bg-blue-500 rounded-full h-4 w-4 border-gray-200 border-2 z-10"></div>
+                  <div className="flex-1 ml-4 font-medium">
+                    May 2019 - Learn Golang
+                  </div>
+                </div>
+                <div className="ml-8">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dignissimos tenetur, suscipit atque et nulla dolores unde
+                  maiores doloribus nemo possimus commodi totam consectetur
+                  temporibus odit velit illo repellendus provident vitae.
+                </div>
+              </li>
+              <li className="mb-2">
+                <div className="flex items-center mb-1">
+                  <div className="bg-blue-500 rounded-full h-4 w-4 border-gray-200 border-2 z-10"></div>
+                  <div className="flex-1 ml-4 font-medium">
+                    April 2019 - Learn Photography
+                  </div>
+                </div>
+                <div className="ml-8">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dignissimos tenetur, suscipit atque et nulla dolores unde
+                  maiores doloribus nemo possimus commodi totam consectetur
+                  temporibus odit velit illo repellendus provident vitae.
+                </div>
+              </li>
+              <li className="mb-2">
+                <div className="flex items-center mb-1">
+                  <div className="bg-blue-500 rounded-full h-4 w-4 border-gray-200 border-2 z-10"></div>
+                  <div className="flex-1 ml-4 font-medium">
+                    Feb 2018 - Learn Laravel
+                  </div>
+                </div>
+                <div className="ml-8">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dignissimos tenetur, suscipit atque et nulla dolores unde
+                  maiores doloribus nemo possimus commodi totam consectetur
+                  temporibus odit velit illo repellendus provident vitae.
+                </div>
+              </li>
+              <li className="mb-2">
+                <div className="flex items-center mb-1">
+                  <div className="bg-blue-500 rounded-full h-4 w-4 border-gray-200 border-2 z-10"></div>
+                  <div className="flex-1 ml-4 font-medium">
+                    May 2017 - Learn PHP
+                  </div>
+                </div>
+                <div className="ml-8">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dignissimos tenetur, suscipit atque et nulla dolores unde
+                  maiores doloribus nemo possimus commodi totam consectetur
+                  temporibus odit velit illo repellendus provident vitae.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="projects" className="">
+        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332]">
+          Last Projects
+        </h1>
+        <div className="pt-10 pb-16 max-w-5xl flex flex-col gap-y-3">
+          <div className="text-xl font-light leading-relaxed">
+            <GithubProjects />
+            <div className="py-4">
+              <Link href="/projects">
+                <span className="font-medium text-base text-[#084CCF]">
+                  See more
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
