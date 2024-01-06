@@ -1,7 +1,6 @@
 "use client";
 
-import { GithubProjects } from "@/components";
-import ExperienceSection from "@/components/ExperienceSection";
+import { LastProjects } from "@/components";
 import Link from "next/link";
 
 export default function Page() {
@@ -107,12 +106,12 @@ export default function Page() {
         </h1>
         <div className="pt-10 pb-16">
           <div className="relative">
-            <ul className="list-none m-0 p-0">
+            <ul className="list-none ml-1 m-0 p-0">
               <li className="mb-2">
                 <div className="flex items-center mb-1">
                   <div className="bg-blue-500 rounded-full h-4 w-4 border-gray-200 border-2 z-10"></div>
                   <div className="flex-1 ml-4 font-medium">
-                    Oct 2020 - Learn Electron JS
+                    Oct 2020 - Learn X
                   </div>
                 </div>
                 <div className="ml-8">
@@ -126,7 +125,7 @@ export default function Page() {
                 <div className="flex items-center mb-1">
                   <div className="bg-blue-500 rounded-full h-4 w-4 border-gray-200 border-2 z-10"></div>
                   <div className="flex-1 ml-4 font-medium">
-                    May 2019 - Learn Golang
+                    May 2019 - Learn Y
                   </div>
                 </div>
                 <div className="ml-8">
@@ -140,7 +139,7 @@ export default function Page() {
                 <div className="flex items-center mb-1">
                   <div className="bg-blue-500 rounded-full h-4 w-4 border-gray-200 border-2 z-10"></div>
                   <div className="flex-1 ml-4 font-medium">
-                    April 2019 - Learn Photography
+                    April 2019 - Learn Z
                   </div>
                 </div>
                 <div className="ml-8">
@@ -154,7 +153,7 @@ export default function Page() {
                 <div className="flex items-center mb-1">
                   <div className="bg-blue-500 rounded-full h-4 w-4 border-gray-200 border-2 z-10"></div>
                   <div className="flex-1 ml-4 font-medium">
-                    Feb 2018 - Learn Laravel
+                    Feb 2018 - Learn W
                   </div>
                 </div>
                 <div className="ml-8">
@@ -168,7 +167,7 @@ export default function Page() {
                 <div className="flex items-center mb-1">
                   <div className="bg-blue-500 rounded-full h-4 w-4 border-gray-200 border-2 z-10"></div>
                   <div className="flex-1 ml-4 font-medium">
-                    May 2017 - Learn PHP
+                    May 2017 - Learn Q
                   </div>
                 </div>
                 <div className="ml-8">
@@ -188,7 +187,7 @@ export default function Page() {
         </h1>
         <div className="pt-10 pb-16 max-w-5xl flex flex-col gap-y-3">
           <div className="text-xl font-light leading-relaxed">
-            <GithubProjects />
+            <LastProjects />
             <div className="py-4">
               <Link href="/projects">
                 <span className="font-medium text-base text-[#084CCF]">

@@ -9,8 +9,8 @@ import Loading from "./loading";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Eren Ozcan",
-  description: "Eren Ozcan is a software developer based in Mugla, Turkey.",
+  title: "John Doe",
+  description: "John Doe is a software developer based in Istanbul, Turkey.",
 };
 
 export default function RootLayout({ children }) {

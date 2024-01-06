@@ -6,9 +6,11 @@ import Image from "next/image";
 import { TfiAnchor } from "react-icons/tfi";
 import { FaCode } from "react-icons/fa6";
 import { MdOutlinePushPin } from "react-icons/md";
+import { RiContactsLine } from "react-icons/ri";
 import { PiVault } from "react-icons/pi";
 import { ConnectMedia } from "./ConnectMedia";
 import { PROFILE } from "@/lib/constants";
+import { IoDocumentTextOutline } from "react-icons/io5";
 
 function Vaul() {
   return (
@@ -84,6 +86,42 @@ function Vaul() {
                         <li className="w-full">
                           <Drawer.Trigger asChild>
                             <Link
+                              href="/contact"
+                              className="flex h-8 justify-between items-center text-sm text-gray-800 hover:bg-gray-200 hover:rounded-md"
+                            >
+                              <div className="flex justify-center items-center mx-2">
+                                <div>
+                                  <RiContactsLine size={16} />
+                                </div>
+                                <div className="font-medium ml-2">Contact</div>
+                              </div>
+                              <div className="mx-2 bg-gray-300 flex justify-center items-center h-5 px-2 rounded-md">
+                                3
+                              </div>
+                            </Link>
+                          </Drawer.Trigger>
+                        </li>
+                        <li className="w-full">
+                          <Drawer.Trigger asChild>
+                            <Link
+                              href="/cv"
+                              className="flex h-8 justify-between items-center text-sm text-gray-800 hover:bg-gray-200 hover:rounded-md"
+                            >
+                              <div className="flex justify-center items-center mx-2">
+                                <div>
+                                  <IoDocumentTextOutline size={16} />
+                                </div>
+                                <div className="font-medium ml-2">CV</div>
+                              </div>
+                              <div className="mx-2 bg-gray-300 flex justify-center items-center h-5 px-2 rounded-md">
+                                4
+                              </div>
+                            </Link>
+                          </Drawer.Trigger>
+                        </li>
+                        <li className="w-full">
+                          <Drawer.Trigger asChild>
+                            <Link
                               href="/bookmarks"
                               className="flex h-8 justify-between items-center text-sm text-gray-800 hover:bg-gray-200 hover:rounded-md"
                             >
@@ -96,7 +134,7 @@ function Vaul() {
                                 </div>
                               </div>
                               <div className="mx-2 bg-gray-300 flex justify-center items-center h-5 px-2 rounded-md">
-                                3
+                                5
                               </div>
                             </Link>
                           </Drawer.Trigger>

@@ -5,6 +5,8 @@ import { FaCode } from "react-icons/fa6";
 import { MdOutlinePushPin } from "react-icons/md";
 import { ConnectMedia } from "./ConnectMedia";
 import { PROFILE } from "@/lib/constants";
+import { RiContactsLine } from "react-icons/ri";
+import { IoDocumentTextOutline } from "react-icons/io5";
 
 export const SideMenu = () => {
   return (
@@ -61,6 +63,38 @@ export const SideMenu = () => {
             </li>
             <li className="w-full">
               <Link
+                href="/contact"
+                className="flex h-8 justify-between items-center text-sm text-gray-800 hover:bg-gray-200 hover:rounded-md"
+              >
+                <div className="flex justify-center items-center mx-2">
+                  <div>
+                    <RiContactsLine size={16} />
+                  </div>
+                  <div className="font-medium ml-2">Contact</div>
+                </div>
+                <div className="mx-2 bg-gray-300 flex justify-center items-center h-5 px-2 rounded-md">
+                  3
+                </div>
+              </Link>
+            </li>
+            <li className="w-full">
+              <Link
+                href="/cv"
+                className="flex h-8 justify-between items-center text-sm text-gray-800 hover:bg-gray-200 hover:rounded-md"
+              >
+                <div className="flex justify-center items-center mx-2">
+                  <div>
+                    <IoDocumentTextOutline size={16} />
+                  </div>
+                  <div className="font-medium ml-2">CV</div>
+                </div>
+                <div className="mx-2 bg-gray-300 flex justify-center items-center h-5 px-2 rounded-md">
+                  4
+                </div>
+              </Link>
+            </li>
+            <li className="w-full">
+              <Link
                 href="/bookmarks"
                 className="flex h-8 justify-between items-center text-sm text-gray-800 hover:bg-gray-200 hover:rounded-md"
               >
@@ -71,7 +105,7 @@ export const SideMenu = () => {
                   <div className="font-medium ml-2">Bookmarks</div>
                 </div>
                 <div className="mx-2 bg-gray-300 flex justify-center items-center h-5 px-2 rounded-md">
-                  3
+                  5
                 </div>
               </Link>
             </li>

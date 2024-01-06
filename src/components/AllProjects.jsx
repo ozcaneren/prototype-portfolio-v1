@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import { Projects } from "@/lib/constants";
+import { PiShareFill } from "react-icons/pi";
+import { useRouter } from "next/navigation";
 
 export const AllProjects = () => {
+  const router = useRouter();
   return (
     <div className="">
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
@@ -10,23 +15,25 @@ export const AllProjects = () => {
             className="rounded-lg border border-[#084CCF]/30 bg-white p-4 text-sm focus:outline-none"
             key={project.url}
           >
-            <div className="mb-2 flex items-center gap-3">
-              <Link
-                href={project.url}
-                className="block truncate font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500"
-              >
-                {project.title}
-              </Link>
-              <div
-                className={`relative inline-block select-none whitespace-nowrap rounded-full ${
-                  project.visibility === "Public"
-                    ? "bg-purple-500"
-                    : project.visibility === "Private"
-                    ? "bg-emerald-600"
-                    : "bg-purple-500"
-                } py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white`}
-              >
-                <div className="mt-px">{project.visibility}</div>
+            <div className="mb-2 flex items-center justify-between gap-3">
+              <div className="flex gap-3">
+                <div
+                  onClick={() => router.push(`projects/${project.id}`)}
+                  className="block cursor-pointer truncate font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500"
+                >
+                  {project.title}
+                </div>
+                <div
+                  className={`relative flex justify-center items-center rounded-full ${
+                    project.visibility === "Public"
+                      ? "bg-purple-500"
+                      : project.visibility === "Private"
+                      ? "bg-emerald-600"
+                      : "bg-purple-500"
+                  } py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white`}
+                >
+                  <div className="">{project.visibility}</div>
+                </div>
               </div>
             </div>
             <p className="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
