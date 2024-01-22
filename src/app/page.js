@@ -46,13 +46,13 @@ export default function Page() {
           Education
         </h1>
         <div className="pt-10 pb-16">
-          <div className="space-y-6 ml-3 border-l-2 dark:border-gray-400 border-dashed">
+          <div className="space-y-6 ml-3 border-l-2 border-dashed">
             <div className="relative w-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500"
+                className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 bg-black/80 dark:bg-white/80 rounded-full text-blue-500"
               >
                 <path
                   fill-rule="evenodd"
@@ -77,7 +77,7 @@ export default function Page() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500"
+                className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 bg-black/80 dark:bg-white/80 rounded-full text-blue-500"
               >
                 <path
                   fill-rule="evenodd"
