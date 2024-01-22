@@ -7,11 +7,11 @@ export default function Page() {
   return (
     <div className="px-4 md:px-3 xl:px-0">
       <section id="about" className="py-8 md:py-10">
-        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332]">
+        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332] dark:text-slate-200">
           About me
         </h1>
         <div className="pt-10 pb-8 max-w-5xl flex flex-col gap-y-3">
-          <div className="text-lg font-light leading-relaxed">
+          <div className="text-lg text-black dark:text-white font-light leading-relaxed">
             <p>
               Lorem ipsum diam sodales volutpat sapien magna interdum, proin
               platea tempus libero hendrerit semper pellentesque odio, fermentum
@@ -42,11 +42,11 @@ export default function Page() {
         </div>
       </section>
       <section id="education" className="">
-        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332]">
+        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332] dark:text-slate-200">
           Education
         </h1>
         <div className="pt-10 pb-16">
-          <div className="space-y-6 ml-3 border-l-2 border-dashed">
+          <div className="space-y-6 ml-3 border-l-2 dark:border-gray-400 border-dashed">
             <div className="relative w-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,13 +61,13 @@ export default function Page() {
                 />
               </svg>
               <div className="ml-6">
-                <h4 className="font-bold text-blue-500">Lorem ipsum</h4>
-                <p className="mt-2 max-w-screen-sm text-sm text-gray-500">
+                <h4 className="font-bold text-blue-500 dark:text-blue-400">Lorem ipsum</h4>
+                <p className="mt-2 max-w-screen-sm text-sm text-gray-500 dark:text-gray-300">
                   Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac
                   dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet
                   sem in, lobortis ante.
                 </p>
-                <span className="mt-1 block text-sm font-semibold text-blue-500">
+                <span className="mt-1 block text-sm font-semibold text-blue-500 dark:text-blue-400">
                   2021 - Present
                 </span>
               </div>
@@ -86,13 +86,13 @@ export default function Page() {
                 />
               </svg>
               <div className="ml-6">
-                <h4 className="font-bold text-blue-500">Lorem ipsum 1</h4>
-                <p className="mt-2 max-w-screen-sm text-sm text-gray-500">
+                <h4 className="font-bold text-blue-500 dark:text-blue-400">Lorem ipsum</h4>
+                <p className="mt-2 max-w-screen-sm text-sm text-gray-500 dark:text-gray-300">
                   Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac
                   dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet
                   sem in, lobortis ante.
                 </p>
-                <span className="mt-1 block text-sm font-semibold text-blue-500">
+                <span className="mt-1 block text-sm font-semibold text-blue-500 dark:text-blue-400">
                   2016 - 2020
                 </span>
               </div>
@@ -101,7 +101,7 @@ export default function Page() {
         </div>
       </section>
       <section id="experience" className="">
-        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332]">
+        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332] dark:text-slate-200">
           Experience
         </h1>
         <div className="pt-10 pb-16">
@@ -182,7 +182,7 @@ export default function Page() {
         </div>
       </section>
       <section id="projects" className="">
-        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332]">
+        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332] dark:text-slate-200">
           Last Projects
         </h1>
         <div className="pt-10 pb-16 max-w-5xl flex flex-col gap-y-3">
@@ -190,7 +190,7 @@ export default function Page() {
             <LastProjects />
             <div className="py-4">
               <Link href="/projects">
-                <span className="font-medium text-base text-[#084CCF]">
+                <span className="font-medium text-base text-[#084CCF] dark:text-[#4577d4]">
                   See more
                 </span>
               </Link>

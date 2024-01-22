@@ -7,8 +7,8 @@ const Detail = ({ params }) => {
   const project = Projects[params.projectid];
 
   return (
-    <div className="py-8 md:py-10 px-4 md:px-3 xl:px-0">
-      <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332]">
+    <div className="min-h-screen py-8 md:py-10 px-4 md:px-3 xl:px-0">
+      <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332] dark:text-slate-200">
         {project.title}
       </h1>
       <div className="pt-10 pb-16 flex flex-col md:flex-row gap-y-6 md:gap-x-6">
